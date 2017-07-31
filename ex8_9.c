@@ -1,4 +1,4 @@
-/*A program that returns the least common multiple of two integers. */
+/*A program that returns the least common multiple of two integers.*/
 
 #include <stdio.h>
 
