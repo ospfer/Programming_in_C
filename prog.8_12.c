@@ -1,4 +1,4 @@
-//Program to sort an array of integers into ascending order
+//Program to sort an array of integers into ascending order 
 
 #include <stdio.h>
 
