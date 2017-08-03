@@ -2,27 +2,33 @@
 #include <stdio.h>
 
 
-/*int transpose(int matrixa[4][5], int matrixb[5][4])
+void transpose(int matrixa[4][5], int matrixb[5][4])
 {
-	int matrix1[4][5];
-	int tempmatrix[5][4];
-
-	//store transposed matrix 1 into matrix 2
+	
+	//store transposed matrix a into matrix b
 	for (int row = 0; row < 4; ++row)
 	{
 		for (int col = 0; col < 5; ++col)
 		{
-			tempmatrix[col][row] = matrix1[row][col];
+			matrixb[col][row] = matrixa[row][col];
 		}
 	}
+	
+	//print transposed matrix
+	printf("\nTransposed Matrix [5][4]:\n\n");
 
-	return tempmatrix[5][4];
+	for (int row = 0; row < 5; ++row)
+	{
+		for (int col = 0; col < 4; ++col)
+		{
+			printf("%5i", matrixb[row][col]);
+			//printf("\n");
+		}
+		printf("\n");
+	}	
 }
-*/
 
 
-
-//main routine
 int main (void)
 {
 	//Assign values to 4x5 matrix
@@ -48,17 +54,5 @@ int main (void)
 		printf("\n");
 	}	
 
-	//print the transposed matrix
-	printf("\nTransposed Matrix [5][4]:\n\n");
-
-	for (int row = 0; row < 5; ++row)
-	{
-		for (int col = 0; col < 4; ++col)
-		{
-			printf("%5i", matrix1[col][row]);
-			//printf("\n");
-		}
-		printf("\n");
-	}		
-	
+	transpose(matrix1, matrix2);
 }
