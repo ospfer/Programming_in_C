@@ -1,7 +1,6 @@
 /*Transpose matrix[4][5] into matrix[5][4]*/
 #include <stdio.h>
 
-
 void transpose(int matrixa[4][5], int matrixb[5][4])
 {
 	
@@ -22,12 +21,11 @@ void transpose(int matrixa[4][5], int matrixb[5][4])
 		for (int col = 0; col < 4; ++col)
 		{
 			printf("%5i", matrixb[row][col]);
-			//printf("\n");
+			
 		}
 		printf("\n");
 	}	
 }
-
 
 int main (void)
 {
