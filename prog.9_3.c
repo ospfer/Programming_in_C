@@ -50,7 +50,7 @@ int numberOfDays (struct date d)
 {
 	int days;
 	bool isLeapYear (struct date d);
-	const int daysPerMonth[12] = 
+	const int daysPerMonth[12] =
 		{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 	if (isLeapYear (d) == true && d.month == 2)
