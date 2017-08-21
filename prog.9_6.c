@@ -20,11 +20,11 @@ int main (void)
 
 	for (i = 0; i < 5; ++i)
 	{
-		printf("Time is %.2i:%.2i:%.2i\n", testTimes[i].hour, testTimes[i].minutes; testTimes[i].seconds);
+		printf("Time is %.2i:%.2i:%.2i\n", testTimes[i].hour, testTimes[i].minutes, testTimes[i].seconds);
 
 		testTimes[i] = timeUpdate (testTimes[i]);
 
-		printf("...one second later it's %.2i:%.2i:%.2i\n", testTimes[i].hour, testTimes[i].minutes; testTimes[i].seconds);
+		printf("...one second later it's %.2i:%.2i:%.2i\n", testTimes[i].hour, testTimes[i].minutes, testTimes[i].seconds);
 	}
 
 	return 0;
