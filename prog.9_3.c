@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-struct date
+struct date //Structure definition
 {
 	int month;
 	int day;
@@ -13,7 +13,7 @@ struct date
 int main (void)
 {
 	struct date today, tomorrow;
-	int numberOfDays (struct date d);
+	int numberOfDays (struct date d); //Function declaration
 
 	printf("Enter today's date (mm dd yyyy): \n");
 	scanf("%i%i%i", &today.month, &today.day, &today.year);
@@ -46,7 +46,7 @@ int main (void)
 
 //Function to find the number of days in a month
 
-int numberOfDays (struct date d)
+int numberOfDays (struct date d) //Function definition
 {
 	int days;
 	bool isLeapYear (struct date d);
