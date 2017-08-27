@@ -4,14 +4,16 @@
 
 int main (void)
 {
-	struct date
+	struct date  //Defines the date structure
 	{
 		int month;
 		int day;
 		int year;
 	};
 
-	struct date today;
+	struct date today;  //Today variable defined with date structure
+
+	//Initializes variables month, day, and year in today structure
 
 	today.month = 9;
 	today.day = 25;
