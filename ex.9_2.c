@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+//Defines the date structure
+
 struct date
 {
 	int month;
