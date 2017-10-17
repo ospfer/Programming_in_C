@@ -18,6 +18,7 @@ int main (void)
 	return 0;
 }
 
+//Function to read a line of characters
 void readLine (char buffer[])
 {
 	char character;
